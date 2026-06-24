@@ -17,7 +17,7 @@
     11. DEMO 2 — SHARED UTILITIES
     12. DEMO 2 — RESUME PAGE
     13. DEMO 2 — PROJECTS PAGE
-    14. DEMO 2 — FEED PAGE
+    14. DEMO 2 — INSIGHTS PAGE
     15. DEMO 3: CREATIVE PORTFOLIO
 -----------------------------------------------------------------------------------*/
 
@@ -1261,7 +1261,7 @@ header {
 
 .card-info,
 .card-channels,
-.card-feed-stats {
+.card-insights-stats {
   grid-column: span 4;
   grid-row: span 4;
 }
@@ -1454,7 +1454,7 @@ header {
 /* 2. Blog Grid - Editorial Redesign */
 
 /* Stats companion card */
-.card-feed-stats {
+.card-insights-stats {
   background: linear-gradient(135deg, var(--velixo-secondary), #b91c1c);
   color: #fff;
   border: none;
@@ -1464,12 +1464,12 @@ header {
   height: 100%;
 }
 
-.card-feed-stats .stat-num {
+.card-insights-stats .stat-num {
   color: #fff;
   font-size: 54px;
 }
 
-.card-feed-stats .stat-label {
+.card-insights-stats .stat-label {
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -1484,7 +1484,7 @@ header {
     grid-column: span 12;
   }
 
-  .blog-page .card-feed-stats {
+  .blog-page .card-insights-stats {
     grid-column: span 4;
     grid-row: span 4;
   }
@@ -2810,17 +2810,17 @@ textarea.vx-input {
 }
 
 /* ==========================================================================
-   DEMO 2 — FEED PAGE: UNIQUE COMPONENT STYLES
+   DEMO 2 — INSIGHTS PAGE: UNIQUE COMPONENT STYLES
    ========================================================================== */
 
 /* Deep purple/indigo banner — distinct from resume navy & projects midnight */
-.vx-demo-2 .card-feed-banner {
+.vx-demo-2 .card-insights-banner {
   background: linear-gradient(135deg, #0d0a1f 0%, #140e35 55%, #1c1248 100%);
   color: #fff;
   border-color: transparent;
   overflow: hidden;
 }
-.vx-demo-2 .card-feed-banner::before {
+.vx-demo-2 .card-insights-banner::before {
   content: "";
   position: absolute;
   top: -60px;
@@ -2834,7 +2834,7 @@ textarea.vx-input {
   );
   pointer-events: none;
 }
-.vx-demo-2 .card-feed-banner::after {
+.vx-demo-2 .card-insights-banner::after {
   content: "";
   position: absolute;
   bottom: -80px;
@@ -2848,22 +2848,22 @@ textarea.vx-input {
   );
   pointer-events: none;
 }
-.vx-demo-2 .card-feed-banner .card-number {
+.vx-demo-2 .card-insights-banner .card-number {
   color: rgba(255, 255, 255, 0.3);
 }
-.vx-demo-2 .card-feed-banner h1 {
+.vx-demo-2 .card-insights-banner h1 {
   color: #fff;
 }
-.vx-demo-2 .card-feed-banner .hero-desc {
+.vx-demo-2 .card-insights-banner .hero-desc {
   color: rgba(255, 255, 255, 0.55);
 }
-.vx-demo-2 .card-feed-banner .banner-stat {
+.vx-demo-2 .card-insights-banner .banner-stat {
   background: rgba(255, 255, 255, 0.07);
   border-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Featured article — text LEFT, image RIGHT (inverse of project rows) */
-.vx-demo-2 .vx-feed-featured {
+.vx-demo-2 .vx-insights-featured {
   display: flex;
   border: 1px solid var(--velixo-border);
   border-radius: var(--radius-xl);
@@ -2872,7 +2872,7 @@ textarea.vx-input {
   background: var(--velixo-card);
   transition: var(--velixo-transition);
 }
-.vx-demo-2 .vx-feed-featured:hover {
+.vx-demo-2 .vx-insights-featured:hover {
   border-color: var(--velixo-primary);
   transform: translateY(-5px);
   box-shadow: 0 24px 60px -12px rgba(var(--velixo-primary-rgb), 0.12);
@@ -2897,7 +2897,7 @@ textarea.vx-input {
   display: block;
   transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.vx-demo-2 .vx-feed-featured:hover .vff-img img {
+.vx-demo-2 .vx-insights-featured:hover .vff-img img {
   transform: scale(1.06);
 }
 .vx-demo-2 .vff-label {
@@ -2964,7 +2964,7 @@ textarea.vx-input {
   font-size: 13px;
   transition: var(--velixo-transition);
 }
-.vx-demo-2 .vx-feed-featured:hover .vff-arrow {
+.vx-demo-2 .vx-insights-featured:hover .vff-arrow {
   background: var(--velixo-primary);
   color: #fff;
   transform: rotate(45deg);
@@ -2972,7 +2972,7 @@ textarea.vx-input {
 }
 
 /* Grid article cards — vertical, image top, clean body */
-.vx-demo-2 .vx-feed-card {
+.vx-demo-2 .vx-insights-card {
   background: var(--velixo-card);
   border: 1px solid var(--velixo-border);
   border-radius: var(--radius-xl);
@@ -2982,7 +2982,7 @@ textarea.vx-input {
   height: 100%;
   transition: var(--velixo-transition);
 }
-.vx-demo-2 .vx-feed-card:hover {
+.vx-demo-2 .vx-insights-card:hover {
   border-color: var(--velixo-primary);
   transform: translateY(-6px);
   box-shadow: 0 24px 60px -12px rgba(var(--velixo-primary-rgb), 0.12);
@@ -2999,7 +2999,7 @@ textarea.vx-input {
   display: block;
   transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.vx-demo-2 .vx-feed-card:hover .vfc-img img {
+.vx-demo-2 .vx-insights-card:hover .vfc-img img {
   transform: scale(1.06);
 }
 .vx-demo-2 .vfc-body {
@@ -3048,7 +3048,7 @@ textarea.vx-input {
 }
 
 @media (max-width: 767px) {
-  .vx-demo-2 .vx-feed-featured {
+  .vx-demo-2 .vx-insights-featured {
     flex-direction: column;
   }
   .vx-demo-2 .vff-img {
@@ -3204,8 +3204,8 @@ textarea.vx-input {
   display: block;
 }
 
-/* Right Section: Editorial Feed */
-.vx-demo-3 .vx-3-feed {
+/* Right Section: Editorial Insights */
+.vx-demo-3 .vx-3-insights {
   flex: 0 0 60%;
   width: 60%;
   margin-left: 40%; /* Space for fixed identity sidebar */
@@ -3213,11 +3213,11 @@ textarea.vx-input {
   padding: 80px 100px 120px 80px; /* Space for sidebar nav */
 }
 
-.vx-demo-3 .feed-section {
+.vx-demo-3 .insights-section {
   margin-bottom: 120px;
 }
 
-.vx-demo-3 .feed-section:last-child {
+.vx-demo-3 .insights-section:last-child {
   margin-bottom: 0;
 }
 
@@ -3339,7 +3339,7 @@ textarea.vx-input {
 
 /* Responsive Overrides */
 @media (max-width: 1200px) {
-  .vx-demo-3 .vx-3-feed {
+  .vx-demo-3 .vx-3-insights {
     padding: 60px 100px 100px 60px;
   }
 }
@@ -3355,7 +3355,7 @@ textarea.vx-input {
     position: relative;
     padding: 80px 40px;
   }
-  .vx-demo-3 .vx-3-feed {
+  .vx-demo-3 .vx-3-insights {
     width: 100%;
     flex: 0 0 auto;
     margin-left: 0; /* Reset margin on mobile */
@@ -3593,7 +3593,7 @@ textarea.vx-input {
   }
 }
 
-.vx-demo-3 .works-feed-item {
+.vx-demo-3 .works-insights-item {
   position: relative;
   transition: var(--velixo-transition);
 }
@@ -3615,12 +3615,12 @@ textarea.vx-input {
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.vx-demo-3 .works-feed-item:hover .work-img-wrapper {
+.vx-demo-3 .works-insights-item:hover .work-img-wrapper {
   transform: translateY(-10px) scale(1.02);
   box-shadow: 0 30px 70px rgba(var(--velixo-primary-rgb), 0.15);
 }
 
-.vx-demo-3 .works-feed-item:hover .work-img-wrapper img {
+.vx-demo-3 .works-insights-item:hover .work-img-wrapper img {
   transform: scale(1.1);
 }
 
@@ -3661,7 +3661,7 @@ textarea.vx-input {
   transition: var(--velixo-transition);
 }
 
-.vx-demo-3 .works-feed-item:hover .editorial-post-title {
+.vx-demo-3 .works-insights-item:hover .editorial-post-title {
   color: var(--velixo-primary);
 }
 
